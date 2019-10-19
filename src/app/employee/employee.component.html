@@ -1,0 +1,26 @@
+<p>employee works!</p>
+<label>Get Response</label>
+<ul *ngFor="let employee of employeesGetResponse">
+  <label>{{employee.name}}</label>
+</ul>
+<br />
+
+<label>Post Response</label>
+<ul *ngFor="let employee of employeesPostResponse">
+  <label>{{employee.name}}</label>
+</ul>
+
+<div>
+  <label>Add a Employee **</label>
+  <br>
+  <br>
+  <label>Name</label>
+  <input type="text" name="name" id="name">
+  <br>
+  <br>
+  <label>Salary</label>
+  <input type="text" name="salary" id="salary">
+  <br>
+  <br>
+  <input type="submit" name="submit" id="submit">
+</div>
