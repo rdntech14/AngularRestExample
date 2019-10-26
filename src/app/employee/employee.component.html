@@ -1,4 +1,26 @@
 <p>employee works!</p>
+<p>Post Result - JSON Array</p>
+<p>{{this.employeesGetResponse | json}}</p>
+
+<p>Post Result - JSON Object</p>
+<p>{{this.response1 | json}}</p>
+
+<p>Post Result - JSON Complex Object</p>
+<p>{{response2 | json}}</p>
+
+<p>Post Result - JSON Complex Object</p>
+<p>{{response2 | json}}</p>
+
+<p>{{response2.swr[0].skill}}</p>
+<ul *ngFor="let e of response2.swr">
+  <label>{{e.skill}}</label>
+</ul>
+
+
+
+
+
+
 <label>Get Response</label>
 <ul *ngFor="let employee of employeesGetResponse">
   <label>{{employee.name}}</label>
